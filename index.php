@@ -6,6 +6,8 @@ $wordToReplace = $_GET["word"];
 
 $replace = str_replace($wordToReplace, "***", $poesia);
 
+$length = strlen($replace);
+
 ?>
 
 <!DOCTYPE html>
@@ -24,5 +26,7 @@ $replace = str_replace($wordToReplace, "***", $poesia);
     <h2>Censured</h2>
 
     <p><?php echo $replace ?></p>
+
+    <h5>The text length is of <?php echo $length ?> characters.</h5>
 </body>
 </html>
